@@ -1,0 +1,14 @@
+class Vehicle:
+    def __init__(self,Brand,Model):
+        self.Brand=Brand
+        self.Model=Model
+class Car(Vehicle):
+    def Display(self):
+        print("Car:",self.Brand,self.Model)
+class Bike(Car):
+    def Display(self):
+        print("Bike:",self.Brand,self.Model)
+c=Car("BMW","BMWM4")
+c.Display()
+b=Bike("GT","interceptal")
+b.Display()
